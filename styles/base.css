@@ -1,105 +1,95 @@
-* {
+/* Base styling for the body and fonts */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-header, .grid, footer{
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-body {
-    font-size: 16px;
-
-}
-
-nav {
-    background-color: steelblue;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
+h1, h2 {
     font-weight: 700;
-    color: #fff; 
 }
 
+/* Header and navigation styling */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e8491d;
+    color: #ffffff;
+}
+
+/* Main content styling */
 main {
-    grid-column: 2/3;
-    margin: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-h1 {
-    color: rgb(20, 95, 156);
-    margin: 1rem 0;
-    border-bottom: 1px solid steelblue;
+/* Card styling */
+.card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main img {
-    float: right;
-    width: 150px;
+.card img {
+    max-width: 100%;
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border-radius: 5px;
 }
 
-p {
+.card ul {
+    list-style: none;
     padding: 0;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #947272;
-    color: #3373;
-    text-align: center;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+.card ul li {
+    margin-bottom: 0.5rem;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+.card ul li a {
+    text-decoration: none;
+    color: #e8491d;
 }
 
-aside h2 {
-    position: absolute;
-    top: 15px;
-    left: 100px;
-    color: black;
-}
-
+/* Footer styling */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000000;
+    background-color: #35424a;
+    color: #ffffff;
     text-align: center;
+    padding: 1rem 0;
 }
 
-/* Class Selectors */
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(122, 13, 13, 0.1);
-    padding: 1rem;
-    background-color: rgb(223, 223, 223);
-    color: rgb(95, 90, 55);
+footer p {
+    margin: 0.5rem 0;
 }
-
-.grid{
-    display: grid;
-    align-items: center;
-    color: rgb(95, 90, 55);
-}
-
-
