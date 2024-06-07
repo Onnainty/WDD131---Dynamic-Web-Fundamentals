@@ -84,6 +84,7 @@ main {
 
 /* Footer styling */
 footer {
+    margin-top: 25px;
     background-color: #35424a;
     color: #ffffff;
     text-align: center;
